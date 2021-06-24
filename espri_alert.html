@@ -24,7 +24,7 @@
 
     .text-left { text-align: left; }
 
-    .button { display: inline-block; color: white; background: #71bc37; border: solid #71bc37; border-width: 10px 20px 8px; font-weight: bold; border-radius: 4px; }
+    .button { display: inline-block; color: white; background: orange; border: solid orange; border-width: 10px 20px 8px; font-weight: bold; border-radius: 4px; }
 
     .button:hover { text-decoration: none; }
 
@@ -42,11 +42,15 @@
 
     p, ul, ol { font-size: 16px; font-weight: normal; margin-bottom: 20px; }
 
+    code { font-size: 16px; font-weight: normal; margin-bottom: 20px; color: grey; font-family: "Lucida Console", Courier, monospace ;}
+
     .container { display: block !important; clear: both !important; margin: 0 auto !important; max-width: 580px !important; }
 
     .container table { width: 100% !important; border-collapse: collapse; }
 
-    .container .masthead { padding: 80px 0; background: #71bc37; color: white; }
+    .container .logo { padding: 10px 0; background: #ffffff; color: black; }
+
+    .container .masthead { padding: 20px 0; background: orange; color: white; }
 
     .container .masthead h1 { margin: 0 auto !important; max-width: 90%; text-transform: uppercase; }
 
@@ -70,9 +74,16 @@
             <!-- Message start -->
             <table>
                 <tr>
+                    <td align="center" class="logo">
+
+                        <img src="https://github.com/glevava/responsive-email/raw/master/images/ESPRI.png" alt=""/>
+
+                    </td>
+                </tr>
+                <tr>
                     <td align="center" class="masthead">
 
-                        <h1>ESPRI WARNING</h1>
+                        <h1>INFORMATION</h1>
 
                     </td>
                 </tr>
@@ -81,19 +92,37 @@
 
                         <h3>Dear users,</h3>
 
-                        <p>Due to a scheduled maintenance of our HPC centre, the IPSL CMIP and CORDEX data will be offline from 6 to 7th of July. Please use the "check replicas" box on the ESGF front-ends to download IPSL data from other sites.</p>
+                        <p align="justify">Due to a scheduled maintenance of our HPC centre, the IPSL CMIP and CORDEX data will be offline from 6 to 7th of July. Please use the "check replicas" box on the ESGF front-ends to download IPSL data from other sites.</p>
+
+                        <p align="right"><em>ESPRI support</em></p>
+
+                        <h4>Date and time</h4>
 
                         <table>
                             <tr>
                                 <td align="center">
-                                    <p>
-                                        Status is <a href="#" class="button">In Progress</a>
-                                    </p>
+                                    <p>From</p>
+                                </td>
+                                <td align="center">
+                                    <p class="button">Tuesday 6th of July 08:00 (Paris time)</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center">
+                                    <p>To</p>
+                                </td>
+                                <td align="center">
+                                    <p class="button">Wednesday 7th of July 20:00 (Paris time)</p>
                                 </td>
                             </tr>
                         </table>
 
-                        <p><em>– ESPRI support</em></p>
+                        <h4>Affected systems</h4>
+
+                        <p>Access to <code>/bdd/CMIP{5,6}/*/IPSL</code> from ESPRI machines</p>
+                        <p>Access to <code>/bdd/CORDEX/*/IPSL</code> from ESPRI machines</p>
+                        <p>Access to <code>/thredds/tgcc</code> from ESPRI machines</p>
+                        <p>Access to TGCC THREDDS spaces from <a href="https://vesg.ipsl.upmc.fr/thredds/catalog/work/catalog.html">vesg.ipsl.upmc.fr</a></p>
 
                     </td>
                 </tr>
@@ -109,7 +138,7 @@
                 <tr>
                     <td class="content footer" align="center">
                         <p>Sent by <a href="#">ESPRI</a>, IPSL Computing and Data Centre, France</p>
-                        <p><a href="mailto:">meso-support@ipsl.fr</a> | <a href="#">Unsubscribe</a></p>
+                        <p><a href="mailto:">meso-support@ipsl.fr</a></p>
                     </td>
                 </tr>
             </table>
